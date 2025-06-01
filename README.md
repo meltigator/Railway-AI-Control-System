@@ -5,11 +5,17 @@ This project is a portable real-time simulation system with WebGL UI, fully auto
 🎯 Why it matters :
 
 ✅ Zero setup – Everything auto-configures in seconds (PHP, SQLite, UI, WebGL)
+
 ✅ AI-driven simulation – Randomized traffic, signals, weather, events
+
 ✅ Web-based UI – No servers to install, just php -S and go
+
 ✅ SQLite-powered – Data persists locally, perfect for embedded use cases
+
 ✅ Security-conscious – Clean configuration, no loose ends
+
 ✅ 100% portable – Works out-of-the-box on any MSYS2-enabled Windows dev machine
+
 
 🚀 How to try it:
 bash railway-ai-control.sh
