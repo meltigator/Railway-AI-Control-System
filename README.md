@@ -95,16 +95,15 @@ Everything else is handled by the script – no web server or manual config need
 
 🔍 Platform Comparison: Windows (MSYS2) vs Linux
 
-    Feature                Windows (MSYS2)                      Linux (Ubuntu/Debian/Fedora..)
-    Shell                  Bash (via MSYS2)                     Native Bash
-    PHP                    Available via pacman -S php          Preinstalled or available via apt/yum
-    SQLite3                Available via pacman -S sqlite       Preinstalled or available via apt/yum
-    Start Command          bash railway-ai-control.sh           bash railway-ai-control.sh
-
-Web Server     php -S localhost:8080                      php -S localhost:8080
-Compatibility	✅ Full with MSYS2	                        ✅ Full out of the box
-Web UI         Opens in default browser (Edge, Chrome)    Opens in Firefox, Chrome, etc.
-Editing Tools  Notepad / VSCode                           nano, vim, VSCode
+    Feature                Windows (MSYS2)                           Linux (Ubuntu/Debian/Fedora..)
+    Shell                  Bash (via MSYS2)                          Native Bash
+    PHP                    Available via pacman -S php               Preinstalled or available via apt/yum
+    SQLite3                Available via pacman -S sqlite            Preinstalled or available via apt/yum
+    Start Command          bash railway-ai-control.sh                bash railway-ai-control.sh
+    Web Server             php -S localhost:8080                     php -S localhost:8080
+    Compatibility          ✅ Full with MSYS2	                     ✅ Full out of the box
+    Web UI                 Opens in default browser (Edge, Chrome)   Opens in Firefox, Chrome, etc.
+    Editing Tools          Notepad / VSCode                          nano, vim, VSCode
 
 📌 Key point: the script behaves identically across both platforms with minimal setup, ensuring full portability and quick deployment in Linux-dominant environments.
 
