@@ -2,7 +2,7 @@
 
 This project is a portable real-time simulation system with WebGL UI, fully automated and built using Bash on MSYS2 (or native Linux). It showcases how minimal dependencies can power modern, interactive, and intelligent control systems. ⚙️🧠
 
-🎯 Why it matters :
+🎯 Why it matters
 
 ✅ Zero setup – Everything auto-configures in seconds (PHP, SQLite, UI, WebGL)
 
@@ -27,7 +27,7 @@ http://localhost:8080
 
 A smart simulation of a railway control system, complete with train movement, alerts, AI decisions, and UI built on-the-fly. Perfect to demonstrate real-time logic, embedded tech, and system monitoring.
 
-🧩 Relevance:
+🧩 Relevance
 
 Whether gate automation, transport systems, or surveillance dashboards – this project shows how much can be done with minimal assumptions, high adaptability, and strong cross-platform tooling.
 
