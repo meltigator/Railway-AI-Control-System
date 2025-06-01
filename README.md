@@ -27,7 +27,7 @@ http://localhost:8080
 
 A smart simulation of a railway control system, complete with train movement, alerts, AI decisions, and UI built on-the-fly. Perfect to demonstrate real-time logic, embedded tech, and system monitoring.
 
-🧩 Relevance for Aitek:
+🧩 Relevance:
 
 Whether gate automation, transport systems, or surveillance dashboards – this project shows how much can be done with minimal assumptions, high adaptability, and strong cross-platform tooling.
 
