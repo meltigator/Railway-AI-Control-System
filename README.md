@@ -95,6 +95,7 @@ Everything else is handled by the script – no web server or manual config need
 
 🔍 Platform Comparison: Windows (MSYS2) vs Linux
 
+    Feature                Windows (MSYS2)                      Linux (Ubuntu/Debian/Fedora..)
 Feature        Windows (MSYS2)                            Linux (Ubuntu/Debian/Fedora...)
 Shell          Bash (via MSYS2)                           Native Bash
 PHP            Available via pacman -S php	              Preinstalled or available via apt/yum
