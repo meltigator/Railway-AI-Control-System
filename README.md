@@ -7,7 +7,7 @@ Unix & Bash aren't just for server management—they can orchestrate entire comp
 
 ✅ Cutting-Edge AI: Real-time collision prevention, optimized route management, and deadlock resolution!
 
-✅ No Heavy Frameworks: Three.js + PHP + SQLite, all orchestrated by a single Bash script.
+✅ Self-Generating Frontend: The entire JavaScript frontend (Three.js, PHP, SQLite, logic, UI) is embedded and generated directly by the Bash script into index.php! 🤯
 
 ✅ Immersive 3D Simulation: Track trains, signals, and stations in a dynamic, responsive 3D environment.
 
