@@ -108,4 +108,7 @@ Everything else is handled by the script – no web server or manual config need
 
 📌 Key point: the script behaves identically across both platforms with minimal setup, ensuring full portability and quick deployment in Linux-dominant environments.
 
+🔍Here is video preview:
+https://youtu.be/TQLNXRahg5o
+
 #Linux #Bash #MSYS2 #AI #Simulation #FullStackDev #TransportTech #SQLite #PHP #EmbeddedSystems #CrossPlatform #SmartControl #RealTimeData #RailwayTech #DevOps
