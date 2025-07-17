@@ -129,7 +129,7 @@ cat > index.php <<'EOF'
   <canvas id="canvas"></canvas>
   
   <div class="hud">
-    <h3>🚄 RAILWAY AI CONTROL TOWER</h3>
+    <h3>RAILWAY AI CONTROL TOWER</h3>
     <div class="metric">System Status: <span id="systemStatus" class="status-good">OPERATIONAL</span></div>
     <div class="metric">Active Trains: <span id="activeTrains">0</span></div>
     <div class="metric">Total Throughput: <span id="throughput">0</span>/h</div>
@@ -137,7 +137,7 @@ cat > index.php <<'EOF'
     <div class="metric">Avg Delay: <span id="avgDelay">0</span>s</div>
     <div class="metric">Safety Score: <span id="safetyScore" class="status-good">100</span>%</div>
     
-    <h4>🤖 AI Decision Engine</h4>
+    <h4>AI Decision Engine</h4>
     <div id="aiDecisions" style="max-height: 150px; overflow-y: auto;"></div>
   </div>
 
@@ -150,29 +150,29 @@ cat > index.php <<'EOF'
   <div class="notifications" id="notificationArea"></div>
   
   <div class="report-btn" onclick="generateReport()">
-    📊 GENERATE SYSTEM REPORTS
+    GENERATE SYSTEM REPORTS
   </div>
   
   <div class="sensor-panel">
-    <h4>📡 EXTERNAL SENSORS</h4>
+    <h4>EXTERNAL SENSORS</h4>
     <div class="metric">Track temperature: <span id="railTemp">32°C</span></div>
     <div class="metric">Vibrations: <span id="vibration">Low</span></div>
     <div class="metric">Cameras: <span id="cameraStatus">Operative</span></div>
   </div>
 
   <div class="surveillance-panel">
-    <h4>🎥 VIDEO SURVEILLANCE SYSTEM</h4>
+    <h4>VIDEO SURVEILLANCE SYSTEM</h4>
     <div class="metric">Status: <span id="surveillanceStatus" class="status-good">ACTIVE</span></div>
     <div class="metric">Intrusions detected: <span id="intrusionCount">0</span></div>
     <div class="metric">Sensitive areas: <span id="sensitiveZones">Stations, Tracks</span></div>
   </div>
 
   <div class="controls">
-    <button onclick="spawnTrain()">🚂 Spawn Train</button>
-    <button onclick="toggleEmergency()">🚨 Emergency</button>
-    <button onclick="resetSystem()">🔄 Reset</button>
-    <button onclick="toggleAI()">🤖 AI: <span id="aiStatus">ON</span></button>
-    <button onclick="toggleSound()">🔊 Sound: <span id="soundStatus">ON</span></button>
+    <button onclick="spawnTrain()">Spawn Train</button>
+    <button onclick="toggleEmergency()">Emergency</button>
+    <button onclick="resetSystem()">Reset</button>
+    <button onclick="toggleAI()">AI: <span id="aiStatus">ON</span></button>
+    <button onclick="toggleSound()">Sound: <span id="soundStatus">ON</span></button>
   </div>
 
   <script>
@@ -693,7 +693,7 @@ cat > index.php <<'EOF'
         this.createLabel();
         this.locomotive = locomotive;  // Memorizza riferimento diretto
 		
-        // 🔊 Train spawn sound
+        // Train spawn sound
         soundSystem.trainHorn(120 + Math.random() * 100, 600);
       }
       
@@ -727,18 +727,18 @@ cat > index.php <<'EOF'
 			if (this.speed > speedLimit) {
 			  if (!this.hasNotifiedOverspeed) {
 				notificationSystem.addNotification(
-				  `🚨 T${this.id} exceeds speed limit: ${(this.speed*100).toFixed(0)} km/h`,
+				  ` T${this.id} exceeds speed limit: ${(this.speed*100).toFixed(0)} km/h`,
 				  'warning'
 				);
 				this.hasNotifiedOverspeed = true;
 				
-				// 🔴 Cambia colore a rosso
+				//  Cambia colore a rosso
 			//	this.mesh.material.color.set(0xff0000);
 				if (this.locomotive && this.locomotive.material) { // Add checks
 					this.locomotive.material.color.set(0xff0000);
 				}
 
-				// 🔁 Lampeggio ogni 15 frame
+				//  Lampeggio ogni 15 frame
 			//	this.blinkCounter = (this.blinkCounter + 1) % 30;
 			//	if (this.blinkCounter < 15) {
 			//		this.mesh.material.color.set(0xff0000); // rosso
@@ -754,7 +754,7 @@ cat > index.php <<'EOF'
 
 			  this.hasNotifiedOverspeed = false;
 			  
-			  // ⚪ Ripristina colore normale
+			  //  Ripristina colore normale
 		//	  this.mesh.material.color.set(0x888888);
 			  if (this.locomotive && this.locomotive.material) { // Add checks
 				  this.locomotive.material.color.set(this.color); // Use the original color
@@ -768,7 +768,7 @@ cat > index.php <<'EOF'
 				this.state = 'waiting';
 				this.waitTime = 60; // Wait frames
 				aiSystem.addDecision(`Train T${this.id}: Collision avoidance - STOP`);
-				// 🔊 Collision warning sound
+				//  Collision warning sound
 				soundSystem.collisionWarning();
 				return;
 			}
@@ -776,7 +776,7 @@ cat > index.php <<'EOF'
 			this.x += this.speed * this.direction;
 			this.mesh.position.x = this.x;
           
-			// 🔊 Occasional train movement sounds
+			//  Occasional train movement sounds
 			if (Math.random() < 0.02) { // 2% chance per frame
 				soundSystem.trainMovement(this.speed);
 			}
@@ -788,7 +788,7 @@ cat > index.php <<'EOF'
 					this.state = 'stopping';
 					this.waitTime = 120 + Math.random() * 180; // 2-5 seconds
 					aiSystem.addDecision(`Train T${this.id}: Arriving at Station ${nearestStation.name}`);
-					// 🔊 Station bell
+					//  Station bell
 					soundSystem.stationBell();
 				}
 			}
@@ -822,7 +822,7 @@ cat > index.php <<'EOF'
 			if (this.waitTime <= 0) {
 				this.state = 'moving';
 				aiSystem.addDecision(`Train T${this.id}: Resuming movement`);
-				// 🔊 Resume horn
+				//  Resume horn
 				soundSystem.trainHorn(100, 400);
 			}
         }
@@ -1211,7 +1211,7 @@ cat > index.php <<'EOF'
 		const timestamp = new Date().toLocaleTimeString();
 		
 		// Notifica visiva e sonora
-		notificationSystem.addNotification(`🚨 Intrusion in ${zone}`, 'critical');
+		notificationSystem.addNotification(` Intrusion in ${zone}`, 'critical');
 		soundSystem.intrusionAlert();
 		
 		// Registra nel log
@@ -1260,9 +1260,9 @@ cat > index.php <<'EOF'
       };
       
       // Effetto visivo generazione report
-      document.querySelector('.report-btn').textContent = '📊 REPORT GENERATION...';
+      document.querySelector('.report-btn').textContent = ' REPORT GENERATION...';
       setTimeout(() => {
-        document.querySelector('.report-btn').textContent = '📊 REPORT GENERATED!';
+        document.querySelector('.report-btn').textContent = ' REPORT GENERATED!';
         
         // Notifica con dati del report
         const reportWindow = window.open('', '_blank');
@@ -1307,7 +1307,7 @@ cat > index.php <<'EOF'
         `);
         
         setTimeout(() => {
-          document.querySelector('.report-btn').textContent = '📊 GENERATE SYSTEM REPORTS';
+          document.querySelector('.report-btn').textContent = ' GENERATE SYSTEM REPORTS';
         }, 3000);
       }, 1500);
     }
@@ -1337,14 +1337,14 @@ cat > index.php <<'EOF'
           signal.state = 'red';
           signal.mesh.material.color.setHex(0xff0000);
         });
-        aiSystem.addDecision('🚨 EMERGENCY PROTOCOL ACTIVATED - All trains STOP');
-        // 🔊 Emergency alarm
+        aiSystem.addDecision(' EMERGENCY PROTOCOL ACTIVATED - All trains STOP');
+        //  Emergency alarm
         soundSystem.emergencyAlarm();
       } else {
         trains.forEach(train => {
           if (train.state === 'waiting') train.state = 'moving';
         });
-        aiSystem.addDecision('✅ Emergency cleared - Normal operations resumed');
+        aiSystem.addDecision(' Emergency cleared - Normal operations resumed');
       }
     }
     
@@ -1423,7 +1423,7 @@ cat > index.php <<'EOF'
     animate();
     
     // Initialize AI system
-    aiSystem.addDecision('🤖 Railway AI Control System ONLINE');
+    aiSystem.addDecision(' Railway AI Control System ONLINE');
     aiSystem.addDecision('Monitoring 4 tracks, 3 stations, 8 signals');
     
     // Aggiunta notifica iniziale
@@ -1632,10 +1632,10 @@ EOF
 start http://localhost:8080/index.php
 
 echo "==> Starting Railway AI Control System..."
-echo "    🚄 System ready at: http://localhost:8080"
-echo "    🎥 Show All Intrusions: http://localhost:8080/api.php?action=get_intrusions"
-echo "    🤖 AI Engine: ACTIVE"
-echo "    📊 Real-time monitoring: ENABLED"
-echo "    🎯 Demo optimized for AITEK interview"
+echo "     System ready at: http://localhost:8080"
+echo "     Show All Intrusions: http://localhost:8080/api.php?action=get_intrusions"
+echo "     AI Engine: ACTIVE"
+echo "     Real-time monitoring: ENABLED"
+echo "     Demo optimized for AITEK interview"
 
 "$(pwd)/$PHP_DIR/php.exe" -c "$(pwd)/$PHP_DIR/php.ini" -S localhost:8080
