@@ -7,11 +7,11 @@ Unix & Bash aren't just for server management—they can orchestrate entire comp
 
 [.] Cutting-Edge AI: Real-time collision prevention, optimized route management, and deadlock resolution!
 
-[.] Self-Generating Frontend: The entire JavaScript frontend (Three.js, PHP, SQLite, logic, UI) is embedded and generated directly by the Bash script into index.php! 🤯
+[.] Self-Generating Frontend: The entire JavaScript frontend (Three.js, PHP, SQLite, logic, UI) is embedded and generated directly by the Bash script into index.php! 
 
 [.] Immersive 3D Simulation: Track trains, signals, and stations in a dynamic, responsive 3D environment.
 
-[.] Voice Notification System: Real-time auditory alerts for overspeeding trains, intrusions, and anomalies (yes, it talks!). 🗣️🚨
+[.] Voice Notification System: Real-time auditory alerts for overspeeding trains, intrusions, and anomalies (yes, it talks!). 
 
 [.] 100% Portable: Downloads PHP, configures everything, runs instantly on MSYS2.
 
