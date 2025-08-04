@@ -104,16 +104,20 @@ Everything else is handled by the script – no web server or manual config need
    - PHP(Lin)               Preinstalled or available via apt/yum
    - SQLite3(Win)           Available via pacman -S sqlite
    - SQLite3(Lin)           Preinstalled or available via apt/yum
-                                
-    Start Command          bash railway-ai-control.sh                bash railway-ai-control.sh
-    Web Server             php -S localhost:8080                     php -S localhost:8080
-    Compatibility          Full with MSYS2                           Full out of the box
-    Web UI                 Opens in default browser (Edge, Chrome)   Opens in Firefox, Chrome, etc.
-    Editing Tools          Notepad / VSCode                          nano, vim, VSCode
+   - Start Command(Win)     bash railway-ai-control.sh
+   - Start Command(Lin)     bash railway-ai-control.sh
+   - Web Server(Win)        php -S localhost:8080
+   - Web Server(Lin)        php -S localhost:8080
+   - Compatibility(Win)     Full with MSYS2
+   - Compatibility(Lin)     Full out of the box
+   - Web UI(Win)            Opens in default browser (Edge, Chrome)
+   - Web UI(Lin)            Opens in Firefox, Chrome, etc.
+   - Editing Tools(Win)     Notepad / VSCode
+   - Editing Tools(Lin)     nano, vim, VSCode
+          
+## Key point: the script behaves identically across both platforms with minimal setup, ensuring full portability and quick deployment in Linux-dominant environments.
 
-* Key point: the script behaves identically across both platforms with minimal setup, ensuring full portability and quick deployment in Linux-dominant environments.
-
-Here is video preview:
+## Here is video preview:
 https://youtu.be/hFPDnujx8hM
 
 #Linux #Bash #MSYS2 #AI #Simulation #FullStackDev #TransportTech #SQLite #PHP #EmbeddedSystems #CrossPlatform #SmartControl #RealTimeData #RailwayTech #DevOps
