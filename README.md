@@ -3,23 +3,23 @@
 This project is a portable real-time simulation system with WebGL UI, fully automated and built using Bash on MSYS2 (or native Linux). It showcases how minimal dependencies can power modern, interactive, and intelligent control systems. 
 Unix & Bash aren't just for server management—they can orchestrate entire complex full-stack applications with artificial intelligence, immersive 3D graphics, voice notifications, and persistent data, all with under 30 seconds of setup time!
 
-* Why it's mind-blowing:
+## Why it's mind-blowing:
 
-- __Cutting-Edge AI: Real-time collision prevention, optimized route management, and deadlock resolution!
+- __Cutting-Edge AI: Real-time collision prevention, optimized route management, and deadlock resolution!__
 
-[.] Self-Generating Frontend: The entire JavaScript frontend (Three.js, PHP, SQLite, logic, UI) is embedded and generated directly by the Bash script into index.php! 
+- __Self-Generating Frontend: The entire JavaScript frontend (Three.js, PHP, SQLite, logic, UI) is embedded and generated directly by the Bash script into index.php!__
 
-[.] Immersive 3D Simulation: Track trains, signals, and stations in a dynamic, responsive 3D environment.
+- __Immersive 3D Simulation: Track trains, signals, and stations in a dynamic, responsive 3D environment.__
 
-[.] Voice Notification System: Real-time auditory alerts for overspeeding trains, intrusions, and anomalies (yes, it talks!). 
+- __Voice Notification System: Real-time auditory alerts for overspeeding trains, intrusions, and anomalies (yes, it talks!).__
 
-[.] 100% Portable: Downloads PHP, configures everything, runs instantly on MSYS2.
+- __100% Portable: Downloads PHP, configures everything, runs instantly on MSYS2.__
 
-[.] External Sensor Integration: Monitors track temperature, vibrations, and camera status, reacting to threats.
+- __External Sensor Integration: Monitors track temperature, vibrations, and camera status, reacting to threats.__
 
-[.] Advanced Reporting: Dashboard with performance metrics and one-click report generation.
+- __Advanced Reporting: Dashboard with performance metrics and one-click report generation.__
 
-* What you get:
+## What you get:
 
     Realistic 3D simulation with real-time train control.
     Intuitive interface and instantly updated data.
