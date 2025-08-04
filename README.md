@@ -5,7 +5,7 @@ Unix & Bash aren't just for server management—they can orchestrate entire comp
 
 * Why it's mind-blowing:
 
-[.] Cutting-Edge AI: Real-time collision prevention, optimized route management, and deadlock resolution!
+- __Cutting-Edge AI: Real-time collision prevention, optimized route management, and deadlock resolution!
 
 [.] Self-Generating Frontend: The entire JavaScript frontend (Three.js, PHP, SQLite, logic, UI) is embedded and generated directly by the Bash script into index.php! 
 
