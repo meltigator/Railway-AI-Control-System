@@ -74,7 +74,7 @@ Main Components:
 
 This approach demonstrates practical skills in backend automation, frontend generation, and embedded system logic, all relevant to scenarios like transport monitoring, gate automation, or intelligent surveillance.
 
-* Addendum – How to Run It on Linux
+## __Addendum – How to Run It on Linux__
 
 Although originally designed for MSYS2 on Windows, this script runs smoothly on any modern Linux distribution with Bash and a few basic tools.
 
