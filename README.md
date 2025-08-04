@@ -80,9 +80,9 @@ Although originally designed for MSYS2 on Windows, this script runs smoothly on 
 
 * Prerequisites:
 
-    Bash shell (default)
+* Bash shell (default)
 
-    curl, unzip, sqlite3, php (≥ 8.x)
+* curl, unzip, sqlite3, php (≥ 8.x)
 
 * Quick setup (example on Ubuntu/Debian):
 
