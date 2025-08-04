@@ -94,9 +94,9 @@ http://localhost:8080
 
 Everything else is handled by the script – no web server or manual config needed. Just run and explore the simulation!
 
-* Platform Comparison: Windows (MSYS2) vs Linux
+## Platform Comparison: Windows (MSYS2) vs Linux
 
-   ## __Feature__
+   ### __Feature__
 
    - Shell(Win)             Bash (via MSYS2)
    - Shell(Lin)             Native Bash                         
