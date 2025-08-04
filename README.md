@@ -96,10 +96,15 @@ Everything else is handled by the script – no web server or manual config need
 
 * Platform Comparison: Windows (MSYS2) vs Linux
 
-   - Feature               - Windows (MSYS2)                          - Linux (Ubuntu/Debian/Fedora..)
-    Shell                  Bash (via MSYS2)                          Native Bash
-    PHP                    Available via pacman -S php               Preinstalled or available via apt/yum
-    SQLite3                Available via pacman -S sqlite            Preinstalled or available via apt/yum
+   ## __Feature__
+
+   - Shell(Win)             Bash (via MSYS2)
+   - Shell(Lin)             Native Bash                         
+   - PHP(Win)               Available via pacman -S php
+   - PHP(Lin)               Preinstalled or available via apt/yum
+   - SQLite3(Win)           Available via pacman -S sqlite
+   - SQLite3(Lin)           Preinstalled or available via apt/yum
+                                
     Start Command          bash railway-ai-control.sh                bash railway-ai-control.sh
     Web Server             php -S localhost:8080                     php -S localhost:8080
     Compatibility          Full with MSYS2                           Full out of the box
